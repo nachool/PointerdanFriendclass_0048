@@ -11,6 +11,17 @@ public:
 
 int main()
 {
-    
+    Mahasiwa mhs{ 1 };
+    mhs.showNim();
+
+    Mahasiwa& refMhs = mhs;
+    refMhs.nim = 2;
+    mhs.showNim();
+
+    Mahasiwa* pMhs = &mhs;
+    pMhs->nim = 3;
+    pMhs->showNim();
+    return 0;
+
 }
 
